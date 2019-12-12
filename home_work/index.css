@@ -9,6 +9,9 @@
     max-width: 850px;
     margin: 0 auto;
 }
+.red{
+    color: #d40000;
+}
 .cards{
     padding: 50px;
     background-color: #53a71c;
