@@ -1,0 +1,212 @@
+*{
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    box-sizing: border-box;
+}
+.create{
+    display: none;
+}
+.flip__card{
+    perspective: 1000px;
+}
+body{
+    margin-top: 10px;
+    background-color: gray;
+   height: 1000px;
+}
+.card{
+    padding: 40px 30px;
+    text-align: center;
+    background-color: #fff;
+    animation: flipInY 2s linear alternate;
+    
+}
+.container{
+    width: 100%;
+    max-width: 450px;
+    margin: 0 auto;
+}
+.card__title{
+    margin-bottom: 20px;
+    font-size: 25px;
+    text-transform: uppercase;
+    animation: slideInLeft 0.5s linear alternate;
+}
+.card__text{
+    margin-bottom: 20px;
+    font-size: 16px;
+    animation: slideInLeft 0.6s linear alternate;
+}
+.form__title{
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    text-align: left;
+    font-size: 16px;
+    animation: slideInLeft 0.7s linear alternate;
+}
+
+.form__input, .form__button{
+    margin-bottom: 25px;
+    padding: 10px;
+    width: 100%;
+    font-size: 14px;
+    outline: none;
+    animation: animateInput 5s linear infinite;
+    animation: slideInLeft 0.8s linear alternate;
+}
+.form__button{
+    padding: 20px 0;
+    text-transform: uppercase;
+    border: none;
+    background-color: #000;
+    color: #fff;
+    animation: slideInLeft 0.9s linear alternate;
+}
+.card__sign{
+    margin-bottom: 30px;
+    animation: slideInLeft 1s linear alternate;
+}
+.card__police, .card__police__link{
+    color: grey;
+    animation: slideInLeft 1.1s linear alternate;
+}
+.card__link{
+    color: brown;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+@keyframes animateInput{
+    0%{
+        /* -webkit-box-shadow: 6px 14px 46px -13px rgba(0,0,0,0);
+-moz-box-shadow: 6px 14px 46px -13px rgba(0,0,0,0);
+box-shadow: 6px 14px 46px -13px rgba(0,0,0,0); */
+    }
+    25%{
+        -webkit-box-shadow: 5px 5px 43px -13px rgba(0,0,0,0.75);
+-moz-box-shadow: 5px 5px 43px -13px rgba(0,0,0,0.75);
+box-shadow: 5px 5px 43px -13px rgba(0,0,0,0.75);
+    }
+    50%{
+        -webkit-box-shadow: 7px 7px 43px -13px rgba(0,0,0,0.75);
+-moz-box-shadow: 7px 7px 43px -13px rgba(0,0,0,0.75);
+box-shadow: 7px 7px 43px -13px rgba(0,0,0,0.75);
+    } 
+    75%{
+        -webkit-box-shadow: 5px 5px 43px -13px rgba(0,0,0,0.75);
+        -moz-box-shadow: 5px 5px 43px -13px rgba(0,0,0,0.75);
+        box-shadow: 5px 5px 43px -13px rgba(0,0,0,0.75);
+    }
+    100%{
+        /* -webkit-box-shadow: 6px 14px 43px -13px rgba(0,0,0,0.75);
+        -moz-box-shadow: 6px 14px 43px -13px rgba(0,0,0,0.75);
+        box-shadow: 6px 14px 43px -13px rgba(0,0,0,0.75); */
+    }
+}
+@-webkit-keyframes slideInLeft {
+    from {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  @keyframes slideInLeft {
+    from {
+      -webkit-transform: translate3d(-100%, 0, 0);
+      transform: translate3d(-100%, 0, 0);
+      visibility: visible;
+    }
+  
+    to {
+      -webkit-transform: translate3d(0, 0, 0);
+      transform: translate3d(0, 0, 0);
+    }
+  }
+  
+  .slideInLeft {
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+  }
+.create{
+    display: none;
+}
+
+@-webkit-keyframes flipInY {
+    from {
+      -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+      transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+  
+    40% {
+      -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+      transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+  
+    60% {
+      -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+      transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+      opacity: 1;
+    }
+  
+    80% {
+      -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+      transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+    }
+  
+    to {
+      -webkit-transform: perspective(400px);
+      transform: perspective(400px);
+    }
+  }
+  
+  @keyframes flipInY {
+    from {
+      -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+      transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+      opacity: 0;
+    }
+  
+    40% {
+      -webkit-transform: perspective(400px) rotate3d(0, 1, 0, -10deg);
+      transform: perspective(400px) rotate3d(0, 1, 0, -10deg);
+      -webkit-animation-timing-function: ease-in;
+      animation-timing-function: ease-in;
+    }
+  
+    60% {
+      -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 0);
+      transform: perspective(400px) rotate3d(0, 1, 0, 0);
+      opacity: 1;
+    }
+  
+    80% {
+      -webkit-transform: perspective(400px) rotate3d(0, 1, 0, 0);
+      transform: perspective(400px) rotate3d(0, 1, 0, 0);
+    }
+  
+    to {
+      -webkit-transform: perspective(0);
+      transform: perspective(0);
+    }
+  }
+  
+  .flipInY {
+    -webkit-backface-visibility: visible !important;
+    backface-visibility: visible !important;
+    -webkit-animation-name: flipInY;
+    animation-name: flipInY;
+  }

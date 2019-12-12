@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="flip__card">
+        <div id="sign__card" class="card container">
+            <h2 class="card__title">
+                Create your account
+            </h2>
+            <p class="card__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita et quo impedit
+            </p>
+            <form>
+                <h3 class="form__title">
+                    Your name :
+                </h3>
+                <input id="name" type="text" class="form__input" name="name">
+                <h3 class="form__title">
+                    E-mail address :
+                </h3>
+                <input id="mail" type="email" class="form__input" name='mail'>
+                <h3 class="form__title">
+                    Password
+                </h3>
+                <input id="password" type="password" class="form__input" name="password">
+
+                <button type='submit' class="form__button" id="button">
+                    Create your account
+                </button>
+            </form>
+            <p class="card__sign">
+                Already have an account?
+                <a id="create__link" class="card__link">Sign in now</a>
+            </p>
+            <p class="card__police">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatum.
+                <a href="#" class="card__police__link">Private police</a>
+            </p>
+        </div>
+        <div id="create__card" class="card create container">
+            <h2 class="card__title">
+                Welcome Back!
+            </h2>
+            <p class="card__text">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit
+            </p>
+            <form>
+                <h3 class="form__title">
+                    E-mail address :
+                </h3>
+                <input id="mail" type="email" class="form__input" name='mail'>
+                <h3 class="form__title">
+                    Password
+                </h3>
+                <input id="password" type="password" class="form__input" name="password">
+
+                <button type='submit' class="form__button" id="button">
+                    Create your account
+                </button>
+            </form>
+            <p class="card__sign">
+                Don`t have an account?
+                <a id="sign__link" class="card__link">Create one now</a>
+            </p>
+            <!-- <p class="card__police">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, voluptatum.
+            <a href="#" class="card__police__link">Private police</a>
+        </p> -->
+        </div>
+    </div>
+    <script src="./main.js"></script>
+</body>
+
+</html>
